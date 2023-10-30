@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'Chunkfive';
+    src: url('../medias/fonts/Chunkfive\ Ex.ttf') format('truetype');
+}
+
+section {
+    display: flex;
+}
+/*Animation images Bastien*/
+.container {
+  margin: auto;
+  padding-top: 6%;
+  padding-left: 3%;
+  overflow: hidden;
+}
+
+.box {
+  width: 60vmin;
+  height: 60vmin;
+  position: relative;
+}
+.box::before {
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 50%;
+  transform: scale(1.42);
+}
+
+.spin-container {
+  width: 50%;
+  height: 50%;
+  -webkit-animation: spin 12s linear infinite;
+          animation: spin 12s linear infinite;
+  position: relative;
+}
+
+.shape {
+  width: 100%;
+  height: 100%;
+  transition: border-radius 1s ease-out;
+  border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  -webkit-animation: morph 8s ease-in-out infinite both alternate;
+          animation: morph 8s ease-in-out infinite both alternate;
+  position: absolute;
+  overflow: hidden;
+  z-index: 5;
+}
+
+.bd {
+  width: 142%;
+  height: 142%;
+  position: absolute;
+  left: -21%;
+  top: -21%;
+  background: url(/medias/images/Bastien.jpg);
+  background-size: 100%;
+  background-position: center center;
+  color: #003;
+  font-size: 5vw;
+  animation: spin 12s linear infinite reverse;
+  opacity: 1;
+  z-index: 2;
+}
+
+@-webkit-keyframes morph {
+  0% {
+    border-radius: 40% 60% 60% 40%/60% 30% 70% 40%;
+  }
+  100% {
+    border-radius: 40% 60%;
+  }
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 40% 60% 60% 40%/60% 30% 70% 40%;
+  }
+  100% {
+    border-radius: 40% 60%;
+  }
+}
+@-webkit-keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+/*Animation texte Bastien*/
+.title{
+    font-family: 'Chunkfive';
+    padding-top: 7%;
+    font-weight: 800;
+    color: transparent;
+    font-size:150px;
+    background: url(/medias/images/rainbow-nebula.jpg) repeat;
+    background-position: 40% 50%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 1px;
+}
