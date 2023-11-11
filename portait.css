@@ -1,0 +1,159 @@
+/*imporation des polices*/
+@font-face {
+    font-family: 'flatory';
+    src: url('../medias/fonts/flatory-serif-condensed.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'dejavu';
+    src: url('../medias/fonts/dejavu-serif.ttf') format('truetype');
+}
+
+/*Parametrage de l'arriere plan*/
+.Portrait{
+    background: linear-gradient(180deg, rgba(0,46,255,1) 35%, rgba(0,166,250,1) 100%);
+    margin: 5%;
+}
+
+/*parametrage du style de l'entete*/
+.hearder_portrait{
+    letter-spacing: 3px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 5%;
+}
+
+.hearder_portrait h2{
+    font-family: 'flatory';
+    font-size: 300%;
+    margin-bottom: 0%;
+}
+
+.hearder_portrait h1{    
+    margin-bottom: 1.5%;
+    margin-top: 1.5%;
+    text-transform: uppercase;
+    font-family: 'flatory';
+    font-size: 300%;
+    line-height: 120%;
+}
+
+.hearder_portrait p{
+    font-family: 'DejaVu';
+    font-weight: bold;
+    font-size: 180%;
+}
+
+/*Parametrage de tout les barres separatrices*/
+.barre_num_1{
+    height: 3px;
+    background-color: black;
+}
+
+.barre_num_2{
+    height: 5px;
+    background-color: black;
+    margin-top: 0.3%;
+}
+
+.barre_num_3{
+    height: 3px;
+    background-color: black;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*parametrage general du coprs de la page*/
+.section {
+    display: flex;
+    margin-left: 13%;
+    margin-right: 13%;
+    height: 35%;
+}
+
+article, .div_images{
+    flex: 1;
+    margin: 2%;
+}
+
+article h3 {
+    font-family: 'DejaVu';
+    letter-spacing: 3px;
+    margin: 0%;
+    text-transform: uppercase;
+    margin-bottom: 3%;
+    font-size: 200%;
+    text-align: center;
+}
+
+article p {
+    font-family: Arial, sans-serif;
+    text-align : justify;
+    font-size: 120%;
+}
+
+/*parametrage de l'image*/
+.imagesNino{
+    border-radius: 100%;
+    width: 100%;
+    height: auto;    
+    margin-bottom: auto;
+    border: 5px solid #ffff;
+}
+
+.texte_photo{
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 150%;
+}
+
+/*parametrage de la liste de date*/
+.date_a_retenir{
+    display: flex;
+    margin: 0%;
+    padding: 0%;
+
+}
+
+.img_fleche{
+    width: 30%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    margin-top: 0%;
+}
+
+.texte_fleche{
+    text-align: left;
+    font-size: 150%;
+    margin-top: auto;
+}
+
+/*parametrage du pied de la page*/
+.footer_portrait {
+    font-family: DejaVu;
+    margin-top: 0%;
+    margin-bottom: 5%;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 200%;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+.rediger {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/*un peu de responsive*/
+@media screen and (max-width: 700px){
+    .section{
+        display: flex;
+        flex-direction: column;
+    }
+}
