@@ -3,35 +3,55 @@
     src: url('../medias/fonts/Chunkfive\ Ex.ttf') format('truetype');
 }
 
-section {
-    display: flex;
+.entete {
+  display: flex;
+  background-color: #181c1f;
 }
+
+h1 {
+  font-family: 'BMPlexSanse';
+  font-size: xx-large;
+  padding-top: 2%;
+}
+
+section p {
+  font-family: 'CormorantGaramond';
+  font-size: x-large;
+  padding-top: 3%;
+  padding-left: 8%;
+  padding-right: 8%;
+  text-transform: lowercase;
+}
+
 /*Animation images Bastien*/
 .container {
   margin: auto;
-  padding-top: 6%;
+  padding-top: 7%;
   padding-left: 3%;
+  padding-right: 4%;
+  padding-bottom: 2%;
   overflow: hidden;
 }
 
 .box {
-  width: 60vmin;
-  height: 60vmin;
-  position: relative;
+  width: 30vmin;
+  height: 30vmin;
+  
 }
+
 .box::before {
   content: "";
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  border-radius: 50%;
+  border-radius: 60%;
   transform: scale(1.42);
 }
 
 .spin-container {
-  width: 50%;
-  height: 50%;
+  width: 100%;
+  height: 100%;
   -webkit-animation: spin 12s linear infinite;
           animation: spin 12s linear infinite;
   position: relative;
@@ -56,7 +76,7 @@ section {
   left: -21%;
   top: -21%;
   background: url(/medias/images/Bastien.jpg);
-  background-size: 100%;
+  background-size: 80%;
   background-position: center center;
   color: #003;
   font-size: 5vw;
@@ -95,15 +115,13 @@ section {
 
 /*Animation texte Bastien*/
 .title{
-    font-family: 'Chunkfive';
-    padding-top: 7%;
-    font-weight: 800;
-    color: transparent;
-    font-size:150px;
-    background: url(/medias/images/rainbow-nebula.jpg) repeat;
-    background-position: 40% 50%;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    letter-spacing: 1px;
+  font-family: 'Chunkfive';
+  padding-top: 7%;
+  padding-left: 10%;
+  color: transparent;
+  font-size:150px;
+  background: url(/medias/images/rainbow-nebula.jpg) repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  letter-spacing: 1px;
 }
