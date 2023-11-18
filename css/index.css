@@ -3,9 +3,13 @@
     src: url('../medias/fonts/Chunkfive\ Ex.ttf') format('truetype');
 }
 
+body{
+  background-color: #0D1B1E;
+}
+
 .entete {
   display: flex;
-  background-color: #181c1f;
+  background-color: #0D1B1E;
 }
 
 h1 {

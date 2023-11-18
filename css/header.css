@@ -3,15 +3,11 @@
     src: url('../medias/fonts/IBMPlexSans-Regular.ttf') format('truetype');
 }
 
-body {
-    background: #F2F2F0;
-}
-
 header {
     z-index: 1000;
     position: fixed;
     top: 0px;
-    background-color: #502DE0;
+    background-color:#009DDC;
     padding-top: 1%;
     padding-bottom: 1%;
     width: 100%;
@@ -24,14 +20,13 @@ header {
 a {
     margin: auto;
     text-decoration: none;
-    color: rgb(255, 255, 255);
     font-family: 'BMPlexSans';
     font-size: x-large;
 }
 
 .hover_nav_element {
     --b: 0.1em;   /* the thickness of the line */
-    --c: #1095c1; /* the color */
+    --c: #A30000; /* the color */
     
     color: #0000;
     padding-block: var(--b);
