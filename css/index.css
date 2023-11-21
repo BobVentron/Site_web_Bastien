@@ -1,8 +1,20 @@
+/*imporation des polices*/
 @font-face {
-    font-family: 'Chunkfive';
-    src: url('../medias/fonts/Chunkfive\ Ex.ttf') format('truetype');
+  font-family: 'Chunkfive';
+  src: url('../medias/fonts/Chunkfive\ Ex.ttf') format('truetype');
 }
 
+@font-face{
+  font-family: 'BMPlexSanse';
+  src: url('../medias/fonts/IBMPlexSans-Regular.ttf') format('truetype');
+}
+
+@font-face{
+  font-family: 'CormorantGaramond';
+  src: url('../medias/fonts/CormorantGaramond-Regular.ttf') format('truetype');
+}
+
+/*Parametrage de la page*/
 body{
   background-color: #0D1B1E;
 }
@@ -12,27 +24,86 @@ body{
   background-color: #0D1B1E;
 }
 
-h1 {
+h1, h2 {
   font-family: 'BMPlexSanse';
   font-size: xx-large;
-  padding-top: 2%;
+  padding-top: 4%;
+  padding-bottom: 3%;
 }
 
 section p {
   font-family: 'CormorantGaramond';
   font-size: x-large;
-  padding-top: 3%;
   padding-left: 8%;
   padding-right: 8%;
-  text-transform: lowercase;
+  padding-bottom: 4%;
+}
+
+section h2 {
+  padding-left: 3%;
+}
+
+.section{
+  display: flex;
+  padding-top: 3%;
+}
+
+.section p{
+  font-family: 'CormorantGaramond';
+  font-size: x-large;
+}
+
+.section h2{
+  font-family: 'CormorantGaramond';
+  font-size: x-large;
+}
+
+.pro, .for {
+  padding-left: 3%;
+}
+
+.for {
+  padding-left: 7%;
+}
+
+.pro {
+  padding-right: 7%;
+}
+
+.pro_container {
+  padding-left: 4%;
+}
+
+.for_container {
+  padding-left: 4%;
+}
+
+.barre{
+  height: 5px;
+  background-color: aliceblue;
+  margin-right: 3%;
+  margin-left: 3%;
+}
+
+.barre2{
+  width: 5px;
+  background-color: aliceblue;
+}
+
+.barre3 {
+  width: 6px;
+  background-color: aliceblue;
+  margin-top: 6%;
+  margin-bottom: 3%;
+
 }
 
 /*Animation images Bastien*/
 .container {
   margin: auto;
   padding-top: 7%;
-  padding-left: 3%;
-  padding-right: 4%;
+  padding-left: 7%;
+  padding-right: 10%;
   padding-bottom: 2%;
   overflow: hidden;
 }
@@ -40,7 +111,6 @@ section p {
 .box {
   width: 30vmin;
   height: 30vmin;
-  
 }
 
 .box::before {

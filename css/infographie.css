@@ -1,3 +1,4 @@
+/*imporation des polices*/
 @font-face {
     font-family: 'CormorantGaramond';
     src: url('../medias/fonts/CormorantGaramond-Regular.ttf') format('truetype');
@@ -8,9 +9,12 @@
     src: url('../medias/fonts/IBMPlexSans-Regular.ttf') format('truetype');
 }
 
+.titre1 {
+    padding-top: 7%;
+}
+
 section {
-    margin-top: 8%;
-    margin-left: 1%;
+    margin-left: 3%;
 }
 
 h1 {
@@ -31,4 +35,10 @@ section p {
     padding-top: 3%;
     padding-left: 8%;
     padding-right: 8%;
+}
+
+.barre{
+    margin: 3%;
+    height: 5px;
+    background-color: aliceblue;
 }

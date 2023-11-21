@@ -1,8 +1,15 @@
+/*imporation des polices*/
+@font-face {
+    font-family: 'Chunkfive';
+    src: url('../medias/fonts/Chunkfive\ Ex.ttf') format('truetype');
+}
+
 .en_construction{
+    font-family: 'Chunkfive';
     padding-top: 13dvh;
     padding-bottom: 74dvh;
-    padding-left: 5%;
     font-size:400%;
+    text-align: center;
 }
 
 body{

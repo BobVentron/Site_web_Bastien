@@ -1,0 +1,23 @@
+/*imporation des polices*/
+@font-face{
+    font-family: 'BMPlexSanse';
+    src: url('../medias/fonts/IBMPlexSans-Regular.ttf') format('truetype');
+  }
+
+body{
+    background-color: #0D1B1E;
+}
+
+h1 {
+    font-family: 'BMPlexSanse';
+    padding-top: 7%;
+    padding-bottom: 2%;
+    text-align: center;
+    font-size: xx-large;
+}
+
+video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
